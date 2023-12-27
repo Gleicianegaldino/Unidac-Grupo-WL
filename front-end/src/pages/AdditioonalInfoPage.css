@@ -1,0 +1,46 @@
+.break-line-left {
+  margin-top: 50px;
+  text-align: left;
+  word-wrap: break-word;
+  color: #5c5c5c;
+}
+
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  color: #5c5c5c;
+}
+
+.icon-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+#icon-left {
+  margin-right: 9px;
+}
+
+#icon-right {
+  margin-left: 9px;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+}
+
+.image-container {
+  text-align: left;
+  margin-top: -70px;
+}
+
+.container p {
+  margin-top: 10px;
+  margin-left: 770px;
+  font-weight: bold;
+  overflow-wrap: break-word;
+  max-width: 50ch;
+  color: #5c5c5c;
+}

@@ -1,4 +1,4 @@
-# Repositório foi criado para realizar o desafio da Unidac
+# Repositório criado para realizar o desafio da Unidac
 ## Tecnologias usadas:
 Arquitetura de software com o backend e frontend devidamente separados:
 

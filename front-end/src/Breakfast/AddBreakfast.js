@@ -26,13 +26,13 @@ export default function AddBreakfast() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Form Data:", breakfast);
-        await axios.post("http://localhost:8080/breakfasts/breakfast", breakfast);
+        await axios.post("https://unidac-k9jj.onrender.com/breakfasts/breakfast", breakfast);
         navigate("/");
     };
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        await axios.post("http://localhost:8080/breakfasts/breakfast", breakfast);
+        await axios.post("https://unidac-k9jj.onrender.com/breakfasts/breakfast", breakfast);
         navigate("/")
     }
 

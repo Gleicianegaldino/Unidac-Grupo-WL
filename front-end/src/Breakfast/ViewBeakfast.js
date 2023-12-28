@@ -23,7 +23,7 @@ export default function ViewBreakfast() {
 
   const loadBreakfast = async () => {
     try {
-      const result = await axios.get(`http://localhost:8080/breakfasts/breakfast/${id}`);
+      const result = await axios.get(`https://unidac-k9jj.onrender.com/breakfasts/breakfast/${id}`);
       setBreakfast(result.data);
     } catch (error) {
       console.error('Error loading breakfast:', error);
@@ -32,7 +32,7 @@ export default function ViewBreakfast() {
 
   const loadInvitedCollaborators = async () => {
     try {
-      const result = await axios.get(`http://localhost:8080/breakfasts/breakfast/${id}/invitedCollaborators`);
+      const result = await axios.get(`https://unidac-k9jj.onrender.com/breakfasts/breakfast/${id}/invitedCollaborators`);
       setInvitedCollaborators(result.data);
     } catch (error) {
       console.error('Error loading invited collaborators:', error);
@@ -41,7 +41,7 @@ export default function ViewBreakfast() {
 
   const addCollaborator = async (newCollaborator) => {
     try {
-      await axios.post(`http://localhost:8080/breakfasts/breakfast/${id}/addCollaborator`, newCollaborator);
+      await axios.post(`https://unidac-k9jj.onrender.comgit/breakfasts/breakfast/${id}/addCollaborator`, newCollaborator);
       loadInvitedCollaborators();
     } catch (error) {
       console.error('Error adding collaborator:', error);

@@ -19,7 +19,7 @@ export default function Home() {
 
   const loadBreakfasts = async () => {
     try {
-      const result = await axios.get("http://localhost:8080/breakfasts/breakfasts");
+      const result = await axios.get("https://unidac-k9jj.onrender.com/breakfasts/breakfasts");
       const updatedBreakfasts = result.data.map((newBreakfast) => {
         const existingBreakfast = breakfasts.find((b) => b.id === newBreakfast.id);
         return existingBreakfast ? existingBreakfast : newBreakfast;
@@ -32,7 +32,7 @@ export default function Home() {
 
   const deleteBreakfast = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/breakfasts/breakfast/${id}`);
+      await axios.delete(`https://unidac-k9jj.onrender.com/breakfasts/breakfast/${id}`);
       loadBreakfasts();
     } catch (error) {
       console.error('Error deleting breakfast:', error);

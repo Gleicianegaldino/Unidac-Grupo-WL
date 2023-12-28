@@ -21,7 +21,7 @@ export default function EditBreakfast() {
 
   const loadBreakfast = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/breakfasts/breakfast/${id}`);
+      const response = await axios.get(`https://unidac-k9jj.onrender.com/breakfasts/breakfast/${id}`);
       setBreakfast(response.data);
     } catch (error) {
       console.error('Error fetching breakfast details:', error);
@@ -38,7 +38,7 @@ export default function EditBreakfast() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:8080/breakfasts/breakfast/${id}`, breakfast);
+      await axios.put(`https://unidac-k9jj.onrender.com/breakfasts/breakfast/${id}`, breakfast);
       navigate("/");
     } catch (error) {
       console.error('Error updating breakfast:', error);

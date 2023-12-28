@@ -1,4 +1,11 @@
 # Repositório criado para realizar o desafio da Unidac
+
+Front-End:
+https://unidac-grupo-wl.vercel.app/
+
+Back-End:
+https://unidac-k9jj.onrender.com
+
 ## Tecnologias usadas:
 Arquitetura de software com o backend e frontend devidamente separados:
 
@@ -10,6 +17,8 @@ Front-End:
 - ReactJs;
 - Bootstrap.
 
+Banco de dados:
+- PostgreSQL.
 
 # Preview
 ![01-home](https://github.com/Gleicianegaldino/Unidac-Grupo-WL/assets/78940661/70f59a15-038e-4b76-8981-42ba895a4368)
